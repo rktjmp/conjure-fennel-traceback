@@ -9,7 +9,7 @@
 (print package.loaded.fennel.traceback) ;; => nil
 (print (vim.inspect (package.loaded.fennel))) ;; => aniseed stuff
 
-;; now package.loaded.fennel != nil, so this now crashes when it attemps to
+;; now package.loaded.fennel != nil, so this now crashes when it attempts to
 ;; reference package.loaded.fennel.traceback (which *is* nil)
 
 (with-open [broken (io.open :test2 :w)] ;; select and :Fnl or ee
